@@ -1,0 +1,6 @@
+#ifndef TEST_FUNCTION_H
+#define TEST_FUNCTION_H
+
+int test_distance(const struct board *, int *,int);
+
+#endif

@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX_POS 50
+
+void Next_permutation(int *tab,int num_positions){
+  int idEnd= num_positions-1;
+  int last=tab[idEnd];
+  int idCur=idEnd - 1;
+  int val=0;
+  while (idCur > -1){ //TODO : Pourquoi -1
+    val = tab[idCur];
+    if (val < last)
+      break;
+    last=val;
+    idCur -= 1;
+    
+    if (idCur <0)
+      return None; //???
+    int out[MAX_POS];
+    int i;
+    for(i=0;i<=idCur;i++)
+      out[i]=tab[i];
+    int idPivot = idCur;
+    idCur += 1;
+    
+    while (idCur <= idEnd && tab[idCur]>val)
+      idCur += 1;
+    int idFirst= idCur -1;
+    out
+  }
+
+  
+}
+
+int main(){
+  int num_positions=5;
+  
+  return EXIT_SUCCESS;
+}
