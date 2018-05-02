@@ -1,9 +1,0 @@
-#ifndef INIT_H
-#define INIT_H
-
-struct board init_board_1();
-struct board init_board_2();
-
-struct affect init_affect(struct board *b, int num_pelican);
-
-#endif
